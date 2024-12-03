@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account - Serenity Hostels</title>
+    
+</head>
+<style>
+    .delete-account-container {
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.confirm-btn {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.confirm-btn:hover {
+    background-color: darkred;
+}
+</style>
+<body>
+
+    <div class="delete-account-container">
+        <h2>Are you sure you want to delete your account?</h2>
+        <p>This action cannot be undone.</p>
+        <form action="delete_account.php" method="POST">
+            <label for="email">Enter your email to confirm:</label>
+            <input type="email"  name="email" placeholder="Enter your email" required>
+            <button type="submit" name="submit" class="confirm-btn">Delete Account</button>
+        </form>
+    </div>
+
+</body>
+</html>
